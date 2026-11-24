@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ken Tiangco — Custom Business Apps, AI Automation &amp; Websites</title>
-<meta name="description" content="Ken Tiangco builds custom business apps, AI automations and websites for businesses that have outgrown spreadsheets. Metro Manila and remote.">
+<title>Ken Tiangco — Custom Systems for Niche Businesses</title>
+<meta name="description" content="Custom apps, automations and websites for niche businesses still running on spreadsheets and group chats. Built by Ken Tiangco, Metro Manila and remote.">
 <meta name="theme-color" content="#F4F2EE">
-<meta property="og:title" content="Ken Tiangco — Custom Business Apps, AI Automation &amp; Websites">
-<meta property="og:description" content="Ken Tiangco builds custom business apps, AI automations and websites for businesses that have outgrown spreadsheets. Metro Manila and remote.">
+<meta property="og:title" content="Ken Tiangco — Custom Systems for Niche Businesses">
+<meta property="og:description" content="Custom apps, automations and websites for niche businesses still running on spreadsheets and group chats. Built by Ken Tiangco, Metro Manila and remote.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kenchunx.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316181D'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='38' fill='%23F4F2EE'%3EK%3C/text%3E%3C/svg%3E">
@@ -17,21 +17,18 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:#F4F2EE;color:#16181D;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:#16181D}a:hover{color:#1F44E0}
-@keyframes ktUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
-.kt-hero>*{animation:ktUp .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes ktUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.kt-hero>*{animation:ktUp .8s cubic-bezier(.2,.7,.2,1) both}
 .kt-hero>*:nth-child(2){animation-delay:.08s}
 .kt-hero>*:nth-child(3){animation-delay:.16s}
 .kt-hero>*:nth-child(4){animation-delay:.24s}
-.kt-hero>*:nth-child(5){animation-delay:.32s}
 @supports (animation-timeline: view()){.kt-reveal{animation:ktUp linear both;animation-timeline:view();animation-range:entry 0% cover 20%}}
-.kt-lift{transition:transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s ease}
+.kt-lift{transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s ease}
 .kt-lift:hover{transform:translateY(-4px);border-color:#1F44E066}
-.kt-shot{overflow:hidden}
-.kt-shot img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
-.kt-shot:hover img{transform:scale(1.035)}
 .kt-btn{transition:transform .3s ease,box-shadow .3s ease}
 .kt-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px #16181D66}
-.kt-link{transition:color .25s ease}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -40,108 +37,176 @@ a{color:#16181D}a:hover{color:#1F44E0}
 
 <!-- NAV -->
 <header style="position: sticky; top: 0; z-index: 10; background: #F4F2EEE6; backdrop-filter: blur(12px); border-bottom: 1px solid #DAD6CE">
-<div style="max-width: 1240px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
 <a href="#top" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; text-decoration: none; letter-spacing: -0.02em">Ken Tiangco<span style="color: #1F44E0">.</span></a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 14px; letter-spacing: 0.02em">
-<a class="kt-link" href="#services" style="text-decoration: none; color: #3D4047; padding: 12px 0">Services</a>
-<a class="kt-link" href="#experience" style="text-decoration: none; color: #3D4047; padding: 12px 0">Experience</a>
-<a class="kt-btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1.5px solid #16181D; color: #16181D; text-decoration: none; border-radius: 8px; font-weight: 500">Book a call</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px; font-size: 15px; font-weight: 500">
+<a href="#services" style="text-decoration: none; padding: 12px 0">Services</a>
+<a href="#how" style="text-decoration: none; padding: 12px 0">How it works</a>
+<a href="#faq" style="text-decoration: none; padding: 12px 0">FAQ</a>
+<a class="kt-btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #16181D; color: #F4F2EE; text-decoration: none; border-radius: 8px; font-weight: 600">Book a free call</a>
 </nav>
 </div>
 </header>
 
 <!-- HERO -->
-<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 120px 32px 96px">
-<div class="kt-hero" style="display: flex; flex-direction: column; gap: 32px; max-width: 980px">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; background: #E3F4EC; color: #0B5D40; font-size: 14px; font-weight: 600"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #0F7A5C"></span>Now taking clients · Metro Manila &amp; remote</span>
-<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(44px, 6vw, 80px); line-height: 1.02; letter-spacing: -0.035em">I turn messy business operations into systems that <em style="font-style: normal; color: #1F44E0">actually run.</em></h1>
-<p style="margin: 0; max-width: 620px; font-size: 19px; line-height: 1.65; color: #3D4047">Custom business apps, AI automations and websites for companies that have outgrown spreadsheets and off-the-shelf tools. Built by an operator, not just a developer.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a class="kt-btn" href="mailto:tiangcojohnkenneth@gmail.com?subject=Free%2015-minute%20call" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; background: #16181D; color: #F4F2EE; text-decoration: none; font-weight: 600; font-size: 15px; border-radius: 8px">Book a free 15-minute call</a>
-<a class="kt-link" href="#services" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 8px; text-decoration: none; font-weight: 500; font-size: 15px">See services →</a>
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px 88px">
+<div class="kt-hero" style="display: flex; flex-direction: column; gap: 28px; max-width: 920px">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: #E3F4EC; color: #0B5D40; font-size: 14px; font-weight: 600"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #0F7A5C"></span>Now taking clients · Metro Manila &amp; remote</span>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(42px, 5.8vw, 76px); line-height: 1.03; letter-spacing: -0.035em">Your business is too unique for off-the-shelf software. <span style="color: #1F44E0">I build the system that fits.</span></h1>
+<p style="margin: 0; max-width: 640px; font-size: 19px; line-height: 1.65; color: #3D4047">Custom apps, automations and websites for niche businesses still running on spreadsheets, group chats and paper. Built around how you actually work, by someone who has run operations himself.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="kt-btn" href="mailto:tiangcojohnkenneth@gmail.com?subject=Free%2015-minute%20call" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; background: #16181D; color: #F4F2EE; text-decoration: none; font-weight: 600; font-size: 15px; border-radius: 8px">Book a free 15-minute call</a>
+<a href="#how" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border: 1.5px solid #16181D; text-decoration: none; font-weight: 600; font-size: 15px; border-radius: 8px">See how it works</a>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0; margin-top: 40px; border-top: 1px solid #DAD6CE">
-<div style="padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 600">3</span><span style="font-size: 13px; line-height: 1.5; color: #5A5E66">products shipped, idea to launch</span></div>
-<div style="padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 600">5+</span><span style="font-size: 13px; line-height: 1.5; color: #5A5E66">integrations: maps, SMS, realtime, chat, auth</span></div>
-<div style="padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 600">80+</span><span style="font-size: 13px; line-height: 1.5; color: #5A5E66">people led through a database rollout</span></div>
-<div style="padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 600">1</span><span style="font-size: 13px; line-height: 1.5; color: #5A5E66">point of contact, first call to launch</span></div>
+</div>
+</section>
+
+<!-- PAIN POINTS -->
+<section style="background: #16181D; color: #F4F2EE">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 48px">
+<div class="kt-reveal" style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA6FF">Sound familiar?</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.03em">If running your business feels harder than it should, it's probably your tools.</h2>
+</div>
+<div class="kt-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<div style="border: 1px solid #33363E; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Bookings live in a spreadsheet</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B9BCC4">…or worse, scattered across group chats, notebooks and someone's memory.</p></div>
+<div style="border: 1px solid #33363E; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Double bookings and no-shows</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B9BCC4">Clients forget, schedules clash, and every mistake costs you a day's revenue.</p></div>
+<div style="border: 1px solid #33363E; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">You can't see what your team is doing</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B9BCC4">Who's on which job, what's finished, and what still needs to be paid.</p></div>
+<div style="border: 1px solid #33363E; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Hours lost to copy-paste</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B9BCC4">Retyping the same details into reports, reminders and invoices every week.</p></div>
+<div style="border: 1px solid #33363E; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Software that almost fits</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B9BCC4">Big platforms built for "average" businesses, charging per user for features you never use.</p></div>
+<div style="border: 1px solid #33363E; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Repeat customers slip away</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #B9BCC4">Nobody remembers who's due for a follow-up, so easy repeat sales never happen.</p></div>
 </div>
 </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" style="margin-top: 24px; background: #E9E5DC; border-top: 1px solid #DAD6CE; border-bottom: 1px solid #DAD6CE">
-<div style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 64px">
-<div class="kt-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 40px; align-items: end">
-<div style="display: flex; flex-direction: column; gap: 14px">
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5E66">02 — Services</span>
-<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em">Software for businesses the market forgot.</h2>
+<section id="services" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 48px">
+<div class="kt-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5E66">What I build</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.03em">One system, built around your business.</h2>
 </div>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3D4047">Off-the-shelf tools are built for the average company. If yours is niche, I build the system that fits how you actually work, in weeks rather than months.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3D4047">Pick one, or combine them. Everything is made for your workflow, your team and your customers, not adapted from a template.</p>
 </div>
-
 <div class="kt-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
-<div class="kt-lift" style="border: 1px solid #DAD6CE; border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 18px; background: #FBFAF7">
-<span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">I.</span>
-<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 28px">Custom business apps</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3D4047">Booking, scheduling, job tracking and dashboards, built around your workflow with logins, roles and your existing data.</p>
-<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #5A5E66">Ideal for field-service crews, clinics, studios, ministries and any team living in spreadsheets.</p>
+<div class="kt-lift" style="background: #FBFAF7; border: 1px solid #DAD6CE; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #1F44E0">01</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 600">Operations app</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">Your own app for bookings, schedules, jobs and payments, on desktop for the office and on phones for the field.</p>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.55; color: #3D4047">
+<li>Booking calendar with capacity at a glance</li>
+<li>Team view: who's where, what's done</li>
+<li>Photo checklists and job records</li>
+<li>Your existing spreadsheets imported</li>
+</ul>
 </div>
-<div class="kt-lift" style="border: 1px solid #DAD6CE; border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 18px; background: #FBFAF7">
-<span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">II.</span>
-<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 28px">AI automation &amp; agents</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3D4047">Automations and AI workflows that remove copy-paste work: reminders, reports, inbox triage, lead follow-up and analysis.</p>
-<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #5A5E66">Ideal for small teams doing the same manual tasks every week.</p>
+<div class="kt-lift" style="background: #FBFAF7; border: 1px solid #DAD6CE; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #1F44E0">02</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 600">Automations &amp; AI</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">Let the repetitive work run itself, so you and your team focus on customers.</p>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.55; color: #3D4047">
+<li>Automatic SMS and email reminders</li>
+<li>Follow-up lists for repeat customers</li>
+<li>Low-stock and unpaid-job alerts</li>
+<li>Reports and insights from your own data</li>
+</ul>
 </div>
-<div class="kt-lift" style="border: 1px solid #DAD6CE; border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 18px; background: #FBFAF7">
-<span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">III.</span>
-<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 28px">Premium websites</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3D4047">Fast, beautiful sites that get found on Google and turn visitors into bookings, live on your own domain.</p>
-<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #5A5E66">Ideal for service brands that need to look as good online as they are in person.</p>
-</div>
-</div>
-
-<div class="kt-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid #DAD6CE">
-<div style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1F44E0">Step 01</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px">Map the workflow</span><span style="font-size: 14px; line-height: 1.6; color: #5A5E66">Find where time, money and information leak.</span></div>
-<div style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1F44E0">Step 02</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px">Prototype fast</span><span style="font-size: 14px; line-height: 1.6; color: #5A5E66">A clickable version you can react to first.</span></div>
-<div style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1F44E0">Step 03</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px">Build &amp; migrate</span><span style="font-size: 14px; line-height: 1.6; color: #5A5E66">A real app, with your data brought over.</span></div>
-<div style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #1F44E0">Step 04</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px">Launch &amp; care</span><span style="font-size: 14px; line-height: 1.6; color: #5A5E66">Live on your domain, improved as you grow.</span></div>
+<div class="kt-lift" style="background: #FBFAF7; border: 1px solid #DAD6CE; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #1F44E0">03</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 600">Website that books</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">A fast, professional site that gets found on Google and turns visitors into enquiries.</p>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.55; color: #3D4047">
+<li>Online estimates and booking forms</li>
+<li>Messenger chat and SMS notifications</li>
+<li>Google-ready SEO setup</li>
+<li>Live on your own domain</li>
+</ul>
 </div>
 </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px">
-<div class="kt-reveal" style="display: flex; flex-direction: column; gap: 18px">
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5E66">03 — Experience</span>
-<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em">Operator first. Builder second.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3D4047">Years in sales, marketing, operations and leadership mean I build around how a business actually makes money.</p>
-<p style="margin: 0; font-size: 14px; line-height: 1.7; color: #5A5E66">BBA, Management · Centro Escolar University<br>Certified Digital Marketing Specialist · DGScale Academia</p>
+<!-- WHO IT'S FOR -->
+<section style="background: #E9E5DC">
+<div class="kt-reveal" style="max-width: 1200px; margin: 0 auto; padding: 88px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5E66">Who it's for</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(30px, 3.6vw, 42px); line-height: 1.1; letter-spacing: -0.03em">Businesses the big software companies ignore.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4047">If your business has its own way of doing things, a custom system will fit better than any generic tool.</p>
 </div>
-<div class="kt-reveal" style="display: flex; flex-direction: column; grid-column: span 2">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">Parkstreet Detailing</span><span style="font-size: 15px; color: #3D4047">Operations Manager</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">2026</span></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">Wing Assistant</span><span style="font-size: 15px; color: #3D4047">General Assistant to the COO</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">2025 — 2026</span></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">Favor Church Manila</span><span style="font-size: 15px; color: #3D4047">Logistics Team Head</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">2024 — 2026</span></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">Sun Life Financial</span><span style="font-size: 15px; color: #3D4047">Project Manager, database overhaul</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">2023</span></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">DGScale</span><span style="font-size: 15px; color: #3D4047">Social Media Manager · Sales &amp; Marketing · EA to the COO</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">2022 — 2023</span></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">WYRM Corp.</span><span style="font-size: 15px; color: #3D4047">Compliance Officer &amp; Paralegal</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">On call</span></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px 24px; padding: 22px 0; border-top: 1px solid #DAD6CE; border-bottom: 1px solid #DAD6CE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 20px">SamJ Philippines</span><span style="font-size: 15px; color: #3D4047">Co-Founder, grew to 3 branches</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5A5E66">Bulacan</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; font-size: 15px">
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Mobile &amp; home services</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Car care &amp; detailing</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Cleaning &amp; maintenance</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Clinics, salons &amp; studios</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Churches &amp; ministries</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Event &amp; program organisers</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Small fleets &amp; field crews</span>
+<span style="background: #FBFAF7; border-radius: 999px; padding: 10px 16px">Training centres</span>
+<span style="background: #16181D; color: #F4F2EE; border-radius: 999px; padding: 10px 16px">Anyone living in spreadsheets</span>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background: #FBFAF7; border-top: 1px solid #DAD6CE; border-bottom: 1px solid #DAD6CE">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 48px">
+<div class="kt-reveal" style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5E66">How it works</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.03em">Simple process. No tech knowledge needed.</h2>
+</div>
+<div class="kt-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+<div style="border: 1px solid #DAD6CE; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 10px; background: #F4F2EE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">1</span><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">Free 15-minute call</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">Tell me how your business runs today and where it hurts.</p></div>
+<div style="border: 1px solid #DAD6CE; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 10px; background: #F4F2EE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">2</span><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">Plan &amp; fixed quote</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">I map your workflow and propose exactly what to build, with a clear price.</p></div>
+<div style="border: 1px solid #DAD6CE; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 10px; background: #F4F2EE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">3</span><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">Prototype, then build</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">You see and try it early, so the final system fits how your team works.</p></div>
+<div style="border: 1px solid #DAD6CE; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 10px; background: #F4F2EE"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; color: #1F44E0">4</span><h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600">Launch &amp; support</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4047">I set it up, train your team and stay on hand as your business grows.</p></div>
+</div>
+</div>
+</section>
+
+<!-- WHY ME -->
+<section class="kt-reveal" style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5E66">Why work with me</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(30px, 3.6vw, 42px); line-height: 1.1; letter-spacing: -0.03em">I've run operations. I know what actually breaks.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3D4047">I'm Ken, a business administration graduate and operator. Before building systems, I co-founded a business that grew to three branches, managed day-to-day operations for a premium detailing company, and led a database overhaul for an 80-person office team. I build tools around how a business makes money, and you deal with me directly from first call to launch.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #DAD6CE; border: 1px solid #DAD6CE; border-radius: 12px; overflow: hidden">
+<div style="background: #FBFAF7; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 600">3</span><span style="font-size: 14px; color: #5A5E66">branches grown as a co-founder</span></div>
+<div style="background: #FBFAF7; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 600">80+</span><span style="font-size: 14px; color: #5A5E66">people led through a system rollout</span></div>
+<div style="background: #FBFAF7; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 600">3</span><span style="font-size: 14px; color: #5A5E66">live systems built, idea to launch</span></div>
+<div style="background: #FBFAF7; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 600">1</span><span style="font-size: 14px; color: #5A5E66">point of contact, no agency hand-offs</span></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="border-top: 1px solid #DAD6CE">
+<div class="kt-reveal" style="max-width: 860px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5E66">FAQ</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(30px, 3.6vw, 42px); letter-spacing: -0.03em">Questions business owners ask</h2>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #DAD6CE">
+<details style="border-bottom: 1px solid #DAD6CE; padding: 20px 0"><summary style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Do I need to be good with technology?</summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #3D4047">No. You explain how your business works; I handle the technical side and train your team until they're comfortable.</p></details>
+<details style="border-bottom: 1px solid #DAD6CE; padding: 20px 0"><summary style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">Can you use my existing spreadsheets?</summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #3D4047">Yes. Your current bookings, clients and records can be imported, so you don't start from zero.</p></details>
+<details style="border-bottom: 1px solid #DAD6CE; padding: 20px 0"><summary style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">How much does it cost?</summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #3D4047">It depends on what you need. After a free call you get a fixed quote, so there are no surprises, and a system you own usually costs less over time than paying per user for software that doesn't fit.</p></details>
+<details style="border-bottom: 1px solid #DAD6CE; padding: 20px 0"><summary style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">How long does it take?</summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #3D4047">Most projects take weeks, not months. You'll see a working prototype early in the process.</p></details>
+<details style="border-bottom: 1px solid #DAD6CE; padding: 20px 0"><summary style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600">What happens after launch?</summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #3D4047">I offer ongoing support for fixes, changes and new features as your business grows.</p></details>
+</div>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" style="border-top: 1px solid #DAD6CE">
-<div class="kt-reveal" style="max-width: 1240px; margin: 0 auto; padding: 140px 32px 64px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 32px">
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5E66">04 — Let's talk</span>
-<h2 style="margin: 0; max-width: 960px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -0.035em">Let's build the system your business is <em style="font-style: normal; color: #1F44E0">missing.</em></h2>
-<p style="margin: 0; max-width: 560px; font-size: 17px; line-height: 1.7; color: #3D4047">I take on a small number of clients at a time. Book a free 15-minute call and tell me what's slowing your business down.</p>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px">
-<a class="kt-btn" href="mailto:tiangcojohnkenneth@gmail.com?subject=Free%2015-minute%20call" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 32px; background: #16181D; color: #F4F2EE; text-decoration: none; font-weight: 600; font-size: 15px; border-radius: 8px">Book a free 15-minute call</a>
-<a class="kt-link" href="mailto:tiangcojohnkenneth@gmail.com" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 12px; text-decoration: none; font-size: 15px; color: #3D4047">tiangcojohnkenneth@gmail.com</a>
+<section id="contact" style="background: #16181D; color: #F4F2EE">
+<div class="kt-reveal" style="max-width: 1200px; margin: 0 auto; padding: 120px 32px 56px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px">
+<h2 style="margin: 0; max-width: 900px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(38px, 5.4vw, 64px); line-height: 1.05; letter-spacing: -0.035em">Tell me what's slowing your business down.</h2>
+<p style="margin: 0; max-width: 560px; font-size: 17px; line-height: 1.7; color: #B9BCC4">I take on a small number of clients at a time. A free 15-minute call is enough to tell you whether a custom system makes sense for you.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+<a class="kt-btn" href="mailto:tiangcojohnkenneth@gmail.com?subject=Free%2015-minute%20call" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; background: #F4F2EE; color: #16181D; text-decoration: none; font-weight: 600; font-size: 15px; border-radius: 8px">Book a free 15-minute call</a>
+<a href="mailto:tiangcojohnkenneth@gmail.com" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 12px; color: #B9BCC4; text-decoration: none; font-size: 15px">tiangcojohnkenneth@gmail.com</a>
 </div>
-<div style="width: 100%; margin-top: 96px; padding-top: 28px; border-top: 1px solid #DAD6CE; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 13px; color: #5A5E66">
+<div style="width: 100%; margin-top: 80px; padding-top: 24px; border-top: 1px solid #33363E; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 14px; color: #B9BCC4">
 <span>© 2026 Ken Tiangco · Metro Manila, Philippines</span>
-<span style="display: flex; gap: 24px"><a class="kt-link" href="https://github.com/kenchunx" style="color: #5A5E66; text-decoration: none">GitHub</a><a class="kt-link" href="#top" style="color: #5A5E66; text-decoration: none">Back to top ↑</a></span>
+<a href="#top" style="color: #B9BCC4; text-decoration: none">Back to top ↑</a>
 </div>
 </div>
 </section>
